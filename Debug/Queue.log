@@ -1,0 +1,32 @@
+﻿Build started 08.12.2015 12:48:58.
+     1>Project "C:\Users\Наталья\Documents\GitHub\Queue\Queue\Queue.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Queue.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Queue.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(51): error C2143: syntax error : missing ';' before '&'
+                 c:\users\наталья\documents\github\queue\queue\queue.h(57) : see reference to class template instantiation 'TQueue<T>' being compiled
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(51): error C2433: 'ostream' : 'friend' not permitted on data declarations
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(51): error C2061: syntax error : identifier 'ostream'
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(52): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(52): error C2805: binary 'operator <<' has too few parameters
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(52): error C2333: 'TQueue<T>::operator <<' : error in function declaration; skipping function body
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(65): error C2244: 'TQueue<T>::IsEmpty' : unable to match function definition to an existing declaration
+                 c:\users\наталья\documents\github\queue\queue\queue.h(39) : see declaration of 'TQueue<T>::IsEmpty'
+                 definition
+                 'bool TQueue::IsEmpty(void)'
+                 existing declarations
+                 'bool TQueue<T>::IsEmpty(void)'
+     1>c:\users\наталья\documents\github\queue\queue\queue.h(73): error C2244: 'TQueue<T>::IsFull' : unable to match function definition to an existing declaration
+                 c:\users\наталья\documents\github\queue\queue\queue.h(40) : see declaration of 'TQueue<T>::IsFull'
+                 definition
+                 'bool TQueue::IsFull(void)'
+                 existing declarations
+                 'bool TQueue<T>::IsFull(void)'
+     1>Done Building Project "C:\Users\Наталья\Documents\GitHub\Queue\Queue\Queue.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.34
