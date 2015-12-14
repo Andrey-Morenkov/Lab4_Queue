@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <ctime>
 using namespace std;
 // Структуры данных - очередь
 
@@ -22,6 +23,16 @@ public:
 	bool IsFull();        // Полная?
 	void Push(const T n); // Добавить элемент в очередь
 	T Pop();              // Извлечь из очереди
+
+	// Вспомогательное
+	int GetMaxsize()
+	{
+		return maxsize;
+	}
+	int GetLen()
+	{
+		return len;
+	}
 };
 template <class T>
 TQueue<T>::TQueue(int _maxsize)
@@ -87,4 +98,17 @@ T TQueue<T>::Pop()
 		len--;
 		return tmp;
 	}
+}
+
+double GenerateRand()
+{
+	double a,b,tmp;
+
+	a = 1 + rand() % 10000; // 1 .. 10000
+	b = 1 + rand() % 10000; // 1 .. 10000
+	if (a < b)
+		tmp = a / b;
+	else
+		tmp = b / a;
+	return tmp;
 }
